@@ -23,6 +23,7 @@ const {
   Stack }  = require('rpn-infix-postfix');
 
 console.log(solve('1 + 2 * 9' )); // result => 19
+console.log(infixToPostfix('1*(4-2)', new Stack(100)).join('')); // result => 142-*
 ```
 
 ## Downloading (via git)
