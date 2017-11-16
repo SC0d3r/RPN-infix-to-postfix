@@ -7,8 +7,12 @@ const OPEN_PAREN = '(';
 const CLOSE_PAREN = ')';
 
 function infixToPostfix(expression = '', operatorsStack) {
+  if (operatorsStack === undefined)
+    err(`Give infixToPostfix a obj from Stack class 
+    [ex : infixToPostfix(expression = '', new Stack(100)) `);
+
   if (expression === '') return [];
-  if(/[a-z]+/gi.test(expression)) err('pass only numbers');
+  if (/[a-z]+/gi.test(expression)) err('pass only numbers');
 
   const splitted = removeAllSpaces(expression);
 
@@ -79,7 +83,7 @@ function replaceExprInParensWithEmptySpots(
   arr,
   i,
   expressionInParens
-  ) {
+) {
 
   arr.splice(
     i,

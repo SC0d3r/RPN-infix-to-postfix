@@ -3,6 +3,7 @@ const postfixSolver = require('./src/postfix-solver').postfixSolver;
 const Stack = require('./src/stack').Stack;
 
 function solve(expr = '', stack) {
+  stack = stack || new Stack(300);
   return postfixSolver(infixToPostfix(expr, stack));
 }
 
@@ -18,7 +19,7 @@ if (typeof process.argv[2] === 'string') {
 
 
 module.exports = {
-  infixToPostfix, postfixSolver, solve
+  infixToPostfix, postfixSolver, solve , Stack
 }
 
 
