@@ -1,0 +1,20 @@
+{
+  "name": "rpn",
+  "version": "1.0.0",
+  "repository": "https://github.com/SC0d3r/RPN-infix-to-postfix.git",
+  "description": "RPN infix to posfix",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine-node spec/ --color"
+  },
+  "keywords": [
+    "RPN",
+    "infix",
+    "postfix"
+  ],
+  "author": "SC0d3r",
+  "license": "MIT",
+  "devDependencies": {
+    "jasmine-node": "^1.14.5"
+  }
+}
