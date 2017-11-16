@@ -8,7 +8,7 @@ const CLOSE_PAREN = ')';
 
 function infixToPostfix(expression = '', operatorsStack) {
   if (operatorsStack === undefined)
-    err(`Give infixToPostfix a obj from Stack class 
+    err(`Give infixToPostfix an instance from Stack class 
     [ex : infixToPostfix(expression = '', new Stack(100)) `);
 
   if (expression === '') return [];
