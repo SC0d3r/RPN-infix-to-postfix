@@ -1,5 +1,5 @@
 {
-  "name": "rpn",
+  "name": "rpn-infix-postfix",
   "version": "1.0.0",
   "repository": "https://github.com/SC0d3r/RPN-infix-to-postfix.git",
   "description": "RPN infix to posfix",
