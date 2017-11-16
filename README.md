@@ -10,11 +10,27 @@
 
 <br>
 
-## Downloading
+## Npm
+### Downloading
+```  $npm i rpn-infix-postfix ```
+
+### Usage
+```javascript
+const { 
+  infixToPostfix,
+  postfixSolver,
+  solve,
+  Stack }  = require('rpn-infix-postfix');
+
+console.log(solve('1 + 2 * 9' )); // result => 19
+```
+
+## Downloading (via git)
 ```
 git clone https://github.com/SC0d3r/RPN-infix-to-postfix.git RPN
 ```
-## Usage
+## cli Usage
+#### after cloning go to directory and then run the following command
 ```javascript
 $node index.js '1* ( 2 + 3)'
  
