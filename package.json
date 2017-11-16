@@ -1,6 +1,6 @@
 {
   "name": "rpn-infix-postfix",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": "https://github.com/SC0d3r/RPN-infix-to-postfix.git",
   "description": "RPN infix to posfix",
   "main": "index.js",
