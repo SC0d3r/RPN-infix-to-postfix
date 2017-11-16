@@ -1,5 +1,7 @@
-const infixToPostfix = require('../src/infix-to-postfix').infixToPostfix;
-const Stack = require('../src/stack').Stack;
+const {
+  infixToPostfix,
+  Stack
+} = require('../src');
 
 describe('[function] infixToPostfix',function(){
   let operatorStack;

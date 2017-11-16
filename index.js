@@ -1,11 +1,9 @@
-const infixToPostfix = require('./src/infix-to-postfix').infixToPostfix;
-const postfixSolver = require('./src/postfix-solver').postfixSolver;
-const Stack = require('./src/stack').Stack;
-
-function solve(expr = '', stack) {
-  stack = stack || new Stack(300);
-  return postfixSolver(infixToPostfix(expr, stack));
-}
+const {
+  solve,
+  infixToPostfix,
+  postfixSolver,
+  Stack
+} = require('./src');
 
 
 if (typeof process.argv[2] === 'string') {
@@ -19,7 +17,7 @@ if (typeof process.argv[2] === 'string') {
 
 
 module.exports = {
-  infixToPostfix, postfixSolver, solve , Stack
+  infixToPostfix, postfixSolver, solve, Stack
 }
 
 

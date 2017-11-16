@@ -1,4 +1,4 @@
-const err = require('./uitls').err;
+const err = require('./utils').err;
 
 class Stack {
   constructor(size = 5){
@@ -28,6 +28,14 @@ class Stack {
   }
   isFull(){
     return this._pointer === this.size;
+  }
+  toString(){
+    const result = [];
+    try {
+      for (; ;) result.push(this.pop());
+    } catch (e) {
+      return result;
+    }
   }
 }
 

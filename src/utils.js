@@ -11,6 +11,14 @@ const flat = arr => {
   }
 }
 
+function removeAllWhitespace(expr) {
+  return expr.replace(/\s+/g, '');
+}
+
+function removeNil(x) {
+  return x !== undefined && x !== null && !Number.isNaN(x);
+}
+
 module.exports = {
-  err,isNum,isOp,flat
+  err,isNum,isOp,flat,removeAllWhitespace,removeNil
 }
