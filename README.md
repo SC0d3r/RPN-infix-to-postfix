@@ -16,20 +16,20 @@ git clone https://github.com/SC0d3r/RPN-infix-to-postfix.git RPN
 ```
 ## Usage
 ```javascript
-> node index.js '1* ( 2 + 3)'
+$node index.js '1* ( 2 + 3)'
  
     > 5 [result]
 ```
-### only posfix version
+### only postfix version
 
 ```javascript
-> node index.js '1* ( 2 + 3)' -postfix
+$node index.js '1* ( 2 + 3)' -postfix
  
    > 123+* [result]
 ```
 
 ## Test
 ### run tests with
-``` > npm test ```
+``` $npm test ```
 
  
