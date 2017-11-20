@@ -1,6 +1,6 @@
 {
   "name": "rpn-infix-postfix",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "repository": "https://github.com/SC0d3r/RPN-infix-to-postfix.git",
   "description": "RPN infix to posfix",
   "main": "index.js",
@@ -10,7 +10,8 @@
   "keywords": [
     "RPN",
     "infix",
-    "postfix"
+    "postfix",
+    "math"
   ],
   "author": "SC0d3r",
   "license": "MIT",
